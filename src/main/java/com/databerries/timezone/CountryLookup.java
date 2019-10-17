@@ -1,9 +1,10 @@
 package com.databerries.timezone;
 
+import java.io.Serializable;
 import java.util.Map;
 import java.util.Set;
 
-public class CountryLookup {
+public class CountryLookup implements Serializable {
     private final Set<String> countriesInEurope;
     private final Map<String, Country> timezoneToCountry;
 

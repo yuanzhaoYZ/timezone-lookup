@@ -1,16 +1,12 @@
 package com.databerries.timezone;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UncheckedIOException;
+import java.io.*;
 import java.time.ZoneId;
 
 /**
  * Get a time zone (e.g Europe/Paris) from a latitude  and longitude
  */
-public class TimeZoneLookup {
+public class TimeZoneLookup implements Serializable {
   // the step is the level of granularity in degrees of the dataset
   private static final double STEP = 0.05;
   // nb of longitude points in the dataset. This value is used in the hash function.

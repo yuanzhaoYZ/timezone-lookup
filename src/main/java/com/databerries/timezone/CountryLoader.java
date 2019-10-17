@@ -1,17 +1,13 @@
 package com.databerries.timezone;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UncheckedIOException;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class CountryLoader {
+public class CountryLoader implements Serializable {
 
     private static final int TIMEZONE_COLUMN_NUMBER = 2;
     private static final int COUNTRY_CODE_COLUMN_NUMBER = 0;

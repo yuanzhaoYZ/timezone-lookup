@@ -1,6 +1,8 @@
 package com.databerries.timezone;
 
-public class Country {
+import java.io.Serializable;
+
+public class Country implements Serializable{
     private final String countryCode;
     private final String administrationCode;
 
